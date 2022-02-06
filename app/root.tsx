@@ -19,6 +19,19 @@ export const meta: MetaFunction = () => {
 export const links: LinksFunction = () => {
   return [
     {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com"
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossOrigin: "anonymous"
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    },
+    {
       href: globalStyle,
       rel: "stylesheet"
     }
