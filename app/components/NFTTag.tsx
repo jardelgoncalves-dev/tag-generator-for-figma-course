@@ -10,10 +10,7 @@ export function NFTTag({ children }: NFTTagProps) {
         <div className="card__diamond">
           <img src="/images/icon.png" alt="Circulo com bordas roxas e um desenho semelhante a um diamante" />
         </div>
-        <div className="card__image">
-          <img src="/images/jardel.png" alt="Jardel" />
-          {children}
-        </div>
+        {children}
       </div>
     </section>
   )
