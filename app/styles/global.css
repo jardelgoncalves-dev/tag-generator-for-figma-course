@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nft {
+  height: 648px;
+  width: 648px;
+  background-image: url("/images/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(228, 60, 255, 0.1);
+  border: 2px solid rgba(228, 60, 255, 0.3);
+  box-sizing: border-box;
+  backdrop-filter: blur(5px);
+
+  border-radius: 32px;
+  width: 296px;
+  height: 477px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__image {
+  width: 220px;
+  height: 330px;
+  border-radius: 24px;
+  border: 2px solid rgba(228, 60, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.card__image img {
+  width: 220px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.card__image::after {
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 33.26%, #140025 73.88%);
+}
